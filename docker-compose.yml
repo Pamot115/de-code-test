@@ -1,0 +1,17 @@
+services:
+  python_app:
+    build: ./python/
+    command: sh -c "sleep 60s ; python3 main.py"
+    environment:
+      MYSQL_PASSWORD: 'Worry3!Unissued!Operative'
+    depends_on:
+      - mysql
+
+  mysql:
+    build: ./mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'target_db'
+      MYSQL_ROOT_PASSWORD: 'Worry3!Unissued!Operative'
+    ports:
+      - '3306:3306'

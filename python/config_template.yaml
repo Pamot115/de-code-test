@@ -1,0 +1,51 @@
+general:
+  log_file:
+  process_file:
+database:
+  host:
+  name: 
+  user: 
+  plain_pwd: 
+  password_var:
+  password_val:
+file_types:
+  Customer: Int32
+  Gregorian date: datetime64[D]
+  Campaign status: category
+  Account status: category
+  Ad group status: category
+  Ad distribution: category
+  Ad status: category
+  Ad type: category
+  Top vs. other: category
+  Device type: category
+  Device OS: category
+  Delivered match type: category
+  BidMatchType: category
+  Language: category
+  Network: category
+  Currency code: category
+  Impressions: Int16
+  Clicks: Int16
+  Conversions: Int16
+  Assists: Int16
+  Spend: Float64
+  Avg. position: Float64
+  Account number: str
+  Account name: str
+  Campaign name: str
+  Ad group: str
+  Ad description: str
+  Ad title: str
+  Tracking Template: str
+  Custom Parameters: str
+  Final Mobile URL: str
+  Final URL: str
+  Display URL: str
+  Final App URL: str
+  Destination URL: str
+keys:
+  c_key: Customer Key
+  d_key: Device Key
+  k_key: Network Key
+  u_key: URL Key
